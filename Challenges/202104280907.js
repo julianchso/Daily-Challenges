@@ -13,13 +13,14 @@ function mix(s1, s2) {
 
 function countLetters(str) {
   letterStorage = {}
-  regex = [a-z]
+  regex = /[a-z]/g
+  
   for (let i = 0; i < str.length; i++) {
     // if (str[i] in letterStorage && str[i] == str[i].toLowerCase()) {
-    if (str[i] in letterStorage && str[i].search(regex)) {
+    if (str[i] in letterStorage && str[i].search(regex) === 0) {
       // console.log(`lowercase`)
       letterStorage[str[i]]++;
-    } else if (str[i].search(regex)) {
+    } else if (str[i].search(regex) === 0) {
       // console.log(`firstLetter`)
       letterStorage[str[i]] = 1;
     }
@@ -28,7 +29,7 @@ function countLetters(str) {
 }
 
 console.log(countLetters('AAA BBB bbb ccc'))
-console.log(countLetters('A BBB BB bbb c a'))
+// console.log(countLetters('A BBB BB bbb c a'))
 // count number of lower case letters and store them in a dictionary.
 
 // compare dictionary1 with dictionary2
