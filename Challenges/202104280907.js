@@ -9,6 +9,9 @@
 function mix(s1, s2) {
   s1obj = countLetters(s1);
   s2obj = countLetters(s2);
+
+  console.log(s1obj)
+  console.log(s2obj)
 }
 
 function countLetters(str) {
@@ -22,7 +25,6 @@ function countLetters(str) {
       letterStorage[str[i]] = 1;
     }
   }
-  // Object.keys(letterStorage).sort();
   return letterStorage;
 }
 
