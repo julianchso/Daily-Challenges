@@ -1,4 +1,5 @@
 // https://www.codewars.com/kata/5629db57620258aa9d000014/train/javascript
+// 4 kyu
 
 // The task is to produce a string in which each lowercase letters of s1 or s2 appears as many times as its maximum if this maximum is strictly greater than 1;
 // These letters will be prefixed by the number of the string where they appear with their maximum value and :.
