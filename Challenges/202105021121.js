@@ -5,16 +5,16 @@
 // The input string will only consist of lower case letters and/or spaces.
 
 function getCount(str) {
-  vowels = ["a", "e", "i", "o", "u"]
-  vowelCount = 0
+  vowels = ["a", "e", "i", "o", "u"];
+  vowelCount = 0;
   for (i of str) {
     console.log(i);
     if (vowels.indexOf(i) != -1) {
       vowelCount++;
     }
   }
-  console.log(vowelCount)
-  return vowelCount
+  console.log(vowelCount);
+  return vowelCount;
 }
 
-getCount("abracadabra")
+getCount("abracadabra");
