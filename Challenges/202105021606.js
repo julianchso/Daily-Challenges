@@ -15,28 +15,22 @@ function rank(st, we, n) {
   for (i = 0; i < nameArr.length; i++) {
     let nameSum = 0;
     for (j = 0; j < nameArr[i].length; j++) {
-      // console.log(nameArr[i][j])
       nameSum += nameArr[i][j].toLowerCase().charCodeAt(0) - 96;
-      // console.log(nameArr[i][j].toLowerCase().charCodeAt(0) - 96)
     }
     nameSum += nameArr[i].length;
     nameSum *= we[i];
     nameNum[nameArr[i]] = nameSum;
   }
 
-  // console.log(nameNum);
-
   for (i = 0; i < nameNum.length; i++) {
     nameNum[i] = nameNum[i] * we[i];
   }
 
   for (i = 0; i < Object.keys(nameNum).length; i++) {
-    // console.log(nameNum[nameArr[i]])
     nameScore.push(nameNum[nameArr[i]]);
   }
 
   nameScore.sort((a, b) => b - a);
-  // console.log(nameScore)
 
   let nValue = nameScore[n - 1];
   console.log(nValue);
