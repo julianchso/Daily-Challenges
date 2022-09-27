@@ -1,12 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <script type="text/javascript" src="202209062013.js"></script>
-  </body>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">
+    Thank you for taking the time to help us improve the platform
+  </p>
+  <form id="survey-form">
+    <label>Name</label>
+    <input placeholder="Enter your name" />
+    <label>Email</label>
+    <input placeholder="Enter your Email" />
+    <label>Age (optional)</label>
+    <input placeholder="Age" />
+    <label>Which option best describes your current role</label>
+    <select name="role">
+      <option value="">Select current role</option>
+      <option value="Student">Student</option>
+      <option value="fullTimeJob">Full Time Job</option>
+      <option value="fullTimeLearner">Full Time Learner</option>
+      <option value="Prefer not to say">Prefer not to say</option>
+      <option value="Other">Other</option>
+    </select>
+    <label>Would you recommend freeCodeCamp to a friend?</label>
+    <label for="definitely"
+      ><input type="radio" name="recommend" /> Definitely</label
+    >
+    <label for="maybe"><input type="radio" name="recommend" /> Maybe</label>
+    <label for="notSure"
+      ><input type="radio" name="recommend" /> Not sure</label
+    >
+
+    <label
+      >What is your favorite feature of freeCodeCamp
+      <select>
+        <option value="">Select an option</option>
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="openSource">Open Source</option>
+      </select>
+    </label>
+
+    <label
+      >What would you like to see improved?
+      <p>(Check all that apply)</p></label
+    >
+    <label for="frontEndProjects"
+      ><input type="checkbox" value="frontEndProjects" /> Front-end
+      Projects</label
+    >
+    <label for=""
+      ><input type="checkbox" value="backEndProjects" /> Back-end
+      Projects</label
+    >
+    <label for="dataVisualization"
+      ><input type="checkbox" value="" />Data Visualization</label
+    >
+    <label for="challenges"
+      ><input type="checkbox" value="" /> Challenges</label
+    >
+    <label for="openSourceCommunity"
+      ><input type="checkbox" value="openSourceCommunity" />Open Source
+      Community</label
+    >
+    <label for="gitterHelpRooms"
+      ><input type="checkbox" value="gitterHelpRooms" />Gitter Help Rooms</label
+    >
+    <label for="videos"><input type="checkbox" value="videos" />Videos</label>
+    <label for="cityMeetups"
+      ><input type="checkbox" value="cityMeetups" />City Meetups</label
+    >
+    <label for="wiki"><input type="checkbox" value="wiki" />Wiki</label>
+    <label for="forum"><input type="checkbox" value="forum" /> Forum</label>
+    <label for="additionalCourses"
+      ><input type="checkbox" value="additionalCourses" />Additional
+      Courses</label
+    >
+
+    <label for="comments"
+      >Any comments or suggestions?<input type="textarea"
+    /></label>
+  </form>
 </html>
